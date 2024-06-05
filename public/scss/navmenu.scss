@@ -1,4 +1,4 @@
-.wrapper .navbar{
+.wrapper .navmenu{
     //places navbar in top left 
     position: fixed;
     left: 0;
@@ -8,27 +8,27 @@
     height: 100vh;
 }
 
-.wrapper .navbar h1{
+.wrapper .navmenu h1{
     color: white;
     text-align: center;
     line-height: 90px;
     border-bottom: 1px solid white;
 }
 
-.wrapper .navbar ul li{
+.wrapper .navmenu ul li{
     list-style: none;
     padding: 15px;
     border-bottom: 1px solid white;
     border-top: 1px solid white;
 }
 
-//navbar text colour
+//navmenu text colour
 a{
     color: white;
     text-decoration: none;
 }
 
-//navbar icon arrangement
+//navmenu icon arrangement
 i{
     margin-right: 10px;
 }
