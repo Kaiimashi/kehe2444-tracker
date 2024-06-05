@@ -2,13 +2,18 @@
   "name": "kehe2444-tracker",
   "version": "1.0.0",
   "description": "A tracking app for chinese recipes",
-  "main": "index.js",
+  
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "prestart": "parcel build ./public/index.html",
+    "dev": "parcel serve ./public/index.html"
   },
   "author": "Kevin He",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
   }
 }

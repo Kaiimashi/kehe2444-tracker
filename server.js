@@ -2,12 +2,11 @@ const express = require('express');
 
 const app = express();
 
-//serve static files out of the 'public' folder
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/dist'));
 
 //serves 'index.html' when users access the root directory using 'res.sendFile()'
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/public/index.html')
+    res.sendFile(__dirname + '/dist/index.html')
 })
 
 //starts server, listenings for incoming traffic + logs message to console
