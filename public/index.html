@@ -39,14 +39,54 @@
             <section id="profileSection">
                 <p>Profile section! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eum architecto tempora ex dolore dolores, dignissimos at eligendi consequatur veritatis ab expedita doloribus cumque doloremque temporibus alias illo. Minima, eos!</p>
             </section>
+
             <section id="homeSection">
                 <p>Home section! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eum architecto tempora ex dolore dolores, dignissimos at eligendi consequatur veritatis ab expedita doloribus cumque doloremque temporibus alias illo. Minima, eos!</p>
             </section>
+
             <section id="recipeTrackerSection">
                 <p>Recipe tracker section! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eum architecto tempora ex dolore dolores, dignissimos at eligendi consequatur veritatis ab expedita doloribus cumque doloremque temporibus alias illo. Minima, eos!</p>
             </section>
+            
+            <!--Recipe Time Tracker uses code adapted from: [dcode]. (2022 Mar 30). Build a Workout Tracker with JavaScript and Local Storage [Video]. Youtube. https://www.youtube.com/watch?v=HY6nPFsADDo Code class names and input types changed where necessary, adapted the HTML structure and modified it to allow users to add a new recipe entry and keep track of how long it takes them to cook the recipe.-->
             <section id="timeTrackerSection">
-                <p>Time tracker section! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eum architecto tempora ex dolore dolores, dignissimos at eligendi consequatur veritatis ab expedita doloribus cumque doloremque temporibus alias illo. Minima, eos!</p>
+                <div id="timeContainer">
+                    <table class="timeTracker">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Recipe Made</th>
+                                <th>Time Taken</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="userEntries">
+                            <tr class="entryRow">
+                                <td>
+                                    <input type="date" class="dateEntry">
+                                </td>
+                                <td>
+                                    <input type="text" class="recipeEntry">
+                                </td>
+                                <td>
+                                    <input type="number" class="timeEntry">
+                                    <span class="timeEntryMeasure">Minutes</span>
+                                </td>
+                                <td>
+                                    <button type="button" class="deleteEntryButton">&times</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="newEntryRow">
+                                <!-- Column span of 4 ensures that the lower row with "add" button spans the entire time tracker table-->
+                                <td colspan="4">
+                                    <button type="button" class="addEntryButton">Add New Recipe &plus;</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </div>
 

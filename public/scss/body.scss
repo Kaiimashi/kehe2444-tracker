@@ -11,6 +11,67 @@
 section{
     height: 100vh;
     padding: 30px;
+    border-bottom: 5px dotted white;
+}
+
+// Styling for Recipe Time Tracker Section
+//Recipe Time Tracker uses code adapted from: [dcode]. (2022 Mar 30). Build a Workout Tracker with JavaScript and Local Storage [Video]. Youtube. https://www.youtube.com/watch?v=HY6nPFsADDo Code class names and input types changed where necessary, adapted the styling structure and modified it to allow users to add a new recipe entry and keep track of how long it takes them to cook the recipe.
+
+.timeTracker {
+    border-collapse: collapse;
+    width: 600px;
+}
+
+.timeTracker th, .timeTracker td {
+    padding: 0.75em;
+}
+
+.dateEntry, .recipeEntry, .timeEntry {
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 1em;
+    height: 2.5em;
+    padding: 0.5em 0;
+}
+
+//styling the duration input box
+.timeEntry {
+    width: 5em;
+}
+
+.deleteEntryButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.deleteEntryButton:hover {
+    background: rgba(0, 0, 0, 0.507);
+}
+
+.newEntryRow {
+    border-top: 30vw;
+    border-bottom: 3px;
+}
+
+// body content responsiveness for mobile
+
+@media(max-width: 850px){
+    .body{
+        width: 100vw;
+        margin-left: 0vw;
+    }
+
+    section{
+        padding-top: 120px;
+    }
 }
 
 //body content responsiveness for mobile
