@@ -1,4 +1,8 @@
-.wrapper .navmenu{
+*{
+    box-sizing: border-box;
+}
+
+.navmenu{
     //places navbar in top left 
     position: fixed;
     left: 0;
@@ -8,27 +12,48 @@
     height: 100vh;
 }
 
-.wrapper .navmenu h1{
+.navmenu .logo{
     color: white;
     text-align: center;
     line-height: 90px;
-    border-bottom: 1px solid white;
+    padding: 15px;
+    font-size: 2.5vw;
 }
 
-.wrapper .navmenu ul li{
+.navmenu ul li{
     list-style: none;
     padding: 15px;
     border-bottom: 1px solid white;
     border-top: 1px solid white;
 }
 
-//navmenu text colour
-a{
-    color: white;
-    text-decoration: none;
+a:hover {
+    background-color: #A94438;
+    padding: 15px;
 }
 
 //navmenu icon arrangement
 i{
     margin-right: 10px;
+}
+
+//menu responsiveness to mobile
+@media(max-width: 850px){
+    .navmenu{
+        //places navmenu across top of screen
+        height: 120px;
+        width: 100vw;
+        display: flex;
+        //align-items: right;
+    }
+
+    .navmenu .menubuttons{
+        position: absolute;
+        left: 75%;
+    }
+
+    .navmenu .logo{
+        font-size: 23px;
+        text-align: left;
+    }
 }

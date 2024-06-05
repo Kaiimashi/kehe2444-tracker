@@ -3,7 +3,7 @@
     scroll-behavior: smooth;
 }
 
-.wrapper .body{
+.body{
     width: 80vw;
     margin-left: 20vw;
 }
@@ -11,4 +11,16 @@
 section{
     height: 100vh;
     padding: 30px;
+}
+
+//body content responsiveness for mobile
+@media(max-width: 850px){
+    .body{
+        width: 100vw;
+        margin-left: 0vw;
+    }
+
+    section{
+        padding-top: 120px;
+    }
 }
