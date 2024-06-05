@@ -12,12 +12,26 @@
         <!--Navigation bar-->
         <nav class="navmenu">
             <div class="logo">Tracker App!</div>
-            <ul class="menubuttons">
-                <li><a href="#profileSection"><i class="fa-solid fa-user"></i>Profile</a></li>
-                <li><a href="#homeSection"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="#recipeTrackerSection"><i class="fa-solid fa-clipboard"></i>Recipe Tracker</a></li>
-                <li><a href="#timeTrackerSection"><i class="fa-solid fa-clock"></i>Time Tracker</a></li>
-            </ul>
+            <div class="desktopmenu">
+                <ul class="tabs">
+                    <li><a href="#profileSection"><i class="fa-solid fa-user"></i>Profile</a></li>
+                    <li><a href="#homeSection"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="#recipeTrackerSection"><i class="fa-solid fa-clipboard"></i>Recipe Tracker</a></li>
+                    <li><a href="#timeTrackerSection"><i class="fa-solid fa-clock"></i>Time Tracker</a></li>
+                </ul>
+            </div>
+            <div class="mobilemenu">
+                <ul class="tabs">
+                    <li onclick=hideMobileMenu()><i class="fa-solid fa-x"></i></li>
+                    <li><a href="#profileSection"><i class="fa-solid fa-user"></i>Profile</a></li>
+                    <li><a href="#homeSection"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="#recipeTrackerSection"><i class="fa-solid fa-clipboard"></i>Recipe Tracker</a></li>
+                    <li><a href="#timeTrackerSection"><i class="fa-solid fa-clock"></i>Time Tracker</a></li>
+                </ul>
+            </div>
+            <div class="menubtn">
+                <ul onclick=showMobileMenu()><i class="fa-solid fa-bars"></i></ul>
+            </div>
         </nav>
 
         <!--Main body of website-->
