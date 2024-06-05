@@ -1,23 +1,25 @@
 .wrapper .navmenu{
-    background: #D24545;
+    background-color: rgba(0, 0, 0, 0.329); //colour is slightly transparent for glass-effect on mobile menu
+    //backdrop-filter: blur(10px); //blurs background behind the mobile menu
+    color: white;
 }
 
-.wrapper .body{
-    background: white;
+a {
+    color: white;
 }
 
 #profileSection {
-    background: #E6BAA3;
+    color: white;
 }
 
 #homeSection {
-    background: #E4DEBE;
+    color: white;
 }
 
 #recipeTrackerSection {
-    background: #E6BAA3;
+    color: white;
 }
 
 #timeTrackerSection {
-    background: #E4DEBE;
+    color: white;
 }
