@@ -3,6 +3,10 @@
     scroll-behavior: smooth;
 }
 
+/* ---------------------------
+Main body and section styling
+--------------------------- */
+
 .body{
     width: 80vw;
     margin-left: 20vw;
@@ -14,8 +18,10 @@ section{
     border-bottom: 5px dotted white;
 }
 
-// Styling for Recipe Time Tracker Section
-//Recipe Time Tracker uses code adapted from: [dcode]. (2022 Mar 30). Build a Workout Tracker with JavaScript and Local Storage [Video]. Youtube. https://www.youtube.com/watch?v=HY6nPFsADDo Code class names and input types changed where necessary, adapted the styling structure and modified it to allow users to add a new recipe entry and keep track of how long it takes them to cook the recipe.
+/* ------------------------
+Recipe Time Tracker Styling
+------------------------- */
+//Recipe Time Tracker uses HTML & CSS code adapted from: [dcode]. (2022 Mar 30). Build a Workout Tracker with JavaScript and Local Storage [Video]. Youtube. https://www.youtube.com/watch?v=HY6nPFsADDo Code class names and input types changed where necessary, adapted the CSS structure and modified it to allow users to add a new recipe entry and keep track of how long it takes them to cook the recipe.
 
 .timeTracker {
     border-collapse: collapse;
@@ -72,20 +78,10 @@ section{
     cursor: pointer;
 }
 
-// body content responsiveness for mobile
+/* ------------------------------------
+Body Content Responsiveness for mobile
+------------------------------------ */
 
-@media(max-width: 850px){
-    .body{
-        width: 100vw;
-        margin-left: 0vw;
-    }
-
-    section{
-        padding-top: 120px;
-    }
-}
-
-//body content responsiveness for mobile
 @media(max-width: 850px){
     .body{
         width: 100vw;
