@@ -57,8 +57,19 @@ section{
 }
 
 .newEntryRow {
-    border-top: 30vw;
+    border-top: 3px;
     border-bottom: 3px;
+}
+
+.newEntryRow td {
+    text-align: right;
+}
+
+.addEntryButton {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: green;
+    cursor: pointer;
 }
 
 // body content responsiveness for mobile
