@@ -24,14 +24,17 @@ a {
     color: white;
 }
 
-//time tracker colours
+/* ------------------------
+Recipe Time Tracker Colours
+------------------------ */
+
 .timeTracker th {
     color: black;
     background-color: #FFD046;
 }
 
 .userEntries .entryRow {
-    background: rgba(211, 211, 211, 0.507);
+    background: rgba(236, 236, 236, 0.616);
 }
 
 .userEntries .entryRow:nth-child(odd) {
@@ -46,4 +49,13 @@ a {
     border-top: solid #333333;
     border-bottom: solid #333333;
     background: white;
+}
+
+//Add/delete button colours
+.deleteEntryButton {
+    color: red;
+}
+
+.addEntryButton {
+    color: green;
 }

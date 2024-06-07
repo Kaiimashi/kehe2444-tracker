@@ -38,18 +38,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //AI generated Function: when add recipe button is clicked, this function selects the .userEntries HTML table body and creates a new row for the user to use. Once created, saves new row to local storage.
-function addNewRow(date='', recipe='', time='') {
+function addNewRow(date = '', recipe = 'Type in your recipe', time = '10') {
     const userEntries = document.querySelector('.userEntries');
     const newRow = document.createElement('tr');
     newRow.className = 'entryRow';
+    //added data labels to innerHTML for responsiveness in mobile
     newRow.innerHTML = `
-        <td>
+        <td data-label = "Date:">
             <input type="date" class="dateEntry" value="${date}">
         </td>
-        <td>
+        <td data-label = "Recipe Made:">
             <input type="text" class="recipeEntry" value="${recipe}">
         </td>
-        <td>
+        <td data-label = "Time Taken:">
             <input type="number" class="timeEntry" value="${time}">
             <span class="timeEntryMeasure">Minutes</span>
         </td>

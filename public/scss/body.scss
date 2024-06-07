@@ -26,6 +26,8 @@ Recipe Time Tracker Styling
 .timeTracker {
     border-collapse: collapse;
     width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .timeTracker th, .timeTracker td {
@@ -35,7 +37,7 @@ Recipe Time Tracker Styling
 .dateEntry, .recipeEntry, .timeEntry {
     display: inline-block;
     box-sizing: border-box;
-    font-size: 1em;
+    //font-size: 1em;
     height: 2.5em;
     padding: 0.5em 0;
 }
@@ -52,8 +54,7 @@ Recipe Time Tracker Styling
     background: none;
     border: none;
     outline: none;
-    color: black;
-    font-size: 1.5em;
+    //font-size: 1.5em;
     margin-left: 0.5em;
     cursor: pointer;
 }
@@ -67,14 +68,11 @@ Recipe Time Tracker Styling
     border-bottom: 3px;
 }
 
-.newEntryRow td {
-    text-align: right;
-}
 
 .addEntryButton {
     display: inline-block;
     padding: 0.5em 1em;
-    color: green;
+    //color: green;
     cursor: pointer;
 }
 
@@ -90,5 +88,47 @@ Body Content Responsiveness for mobile
 
     section{
         padding-top: 120px;
+    }
+}
+
+/* -------------------------------
+Recipe Time Tracker Responsiveness
+------------------------------- */
+
+@media(max-width: 850px){
+    .timeTracker th, .timeTracker td {
+        display: none;
+    }
+
+    .timeTracker {
+        width: 100%;
+    }
+
+    .timeTracker tr {
+        display: block;
+    }
+
+    .timeTracker th td {
+        padding: 0.5em;
+    }
+
+    .timeTracker td {
+        display: block;
+    }
+
+    .dateEntry, .recipeEntry, .timeEntry {
+        width: 20em;
+    }
+
+    .timeEntry {
+        width: 16.5em;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 30%;
+        padding-left: 10%;
     }
 }

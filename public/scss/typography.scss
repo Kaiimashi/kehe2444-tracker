@@ -2,6 +2,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ---------------------------
+Recipe Time Tracker Typography 
+--------------------------- */
+
 .timeTracker {
     font-size: 14px;
 }
@@ -14,4 +18,30 @@
 
 .timeEntry {
     text-align: right;
+}
+
+//Fonts for mobile view
+.dateEntry, .recipeEntry, .timeEntry {
+    font-size: 1em;
+}
+
+.deleteEntryButton {
+    font-size: 1.5em;
+}
+
+.newEntryRow td {
+    text-align: right;
+}
+
+.timeTracker td {
+    text-align: right;
+}
+
+.dateEntry, .recipeEntry, .timeEntry {
+    text-align: right;
+}
+
+td::before {
+    text-align: left;
+    font-weight: bold;
 }
