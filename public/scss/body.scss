@@ -18,6 +18,42 @@ section{
     border-bottom: 5px dotted white;
 }
 
+/* -----------------
+Meal Tracker Styling
+----------------- */
+
+.cardWrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.mealCard {
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.mealCard img {
+    width: 100%;
+    height: 200px;
+}
+
+.mealContent {
+    padding: 16px;
+}
+
+.expandButton {
+    display: flex;
+    width: 150px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-right: 50px;
+}
+
 /* ------------------------
 Recipe Time Tracker Styling
 ------------------------- */
@@ -54,13 +90,8 @@ Recipe Time Tracker Styling
     background: none;
     border: none;
     outline: none;
-    //font-size: 1.5em;
     margin-left: 0.5em;
     cursor: pointer;
-}
-
-.deleteEntryButton:hover {
-    background: rgba(0, 0, 0, 0.507);
 }
 
 .newEntryRow {
@@ -72,7 +103,6 @@ Recipe Time Tracker Styling
 .addEntryButton {
     display: inline-block;
     padding: 0.5em 1em;
-    //color: green;
     cursor: pointer;
 }
 

@@ -1,3 +1,7 @@
+/* ---------------------------
+Main body and section colours
+--------------------------- */
+
 .wrapper .navmenu{
     background-color: rgba(0, 0, 0, 0.329); //colour is slightly transparent for glass-effect on mobile menu
     //backdrop-filter: blur(10px); //blurs background behind the mobile menu
@@ -22,6 +26,23 @@ a {
 
 #timeTrackerSection {
     color: white;
+}
+
+/* -----------------
+Meal Tracker colours
+------------------ */
+
+.cardWrapper {
+    color: black;
+}
+
+.expandButton {
+    background-color: #FFD046;
+    color: black;
+}
+
+.expandButton:hover {
+    background: rgba(0, 151, 33, 0.89);
 }
 
 /* ------------------------
@@ -58,4 +79,8 @@ Recipe Time Tracker Colours
 
 .addEntryButton {
     color: green;
+}
+
+.deleteEntryButton:hover {
+    background: rgba(0, 0, 0, 0.507);
 }
