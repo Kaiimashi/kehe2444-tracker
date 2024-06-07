@@ -9,23 +9,24 @@
 <body>
     <div class="wrapper">
 
-        <!--Website Navigation-->
+        <!----------------------
+        Web app Navigation menus
+        ----------------------->
+
         <nav class="navmenu">
             <div class="logo">Tracker App!</div>
             <div class="desktopmenu">
                 <ul class="tabs">
-                    <li><a href="#profileSection"><i class="fa-solid fa-user"></i>Profile</a></li>
                     <li><a href="#homeSection"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li><a href="#recipeTrackerSection"><i class="fa-solid fa-clipboard"></i>Recipe Tracker</a></li>
+                    <li><a href="#mealTrackerSection"><i class="fa-solid fa-clipboard"></i>Meal Tracker</a></li>
                     <li><a href="#timeTrackerSection"><i class="fa-solid fa-clock"></i>Time Tracker</a></li>
                 </ul>
             </div>
             <div class="mobilemenu">
                 <ul class="tabs">
                     <li onclick=hideMobileMenu()><i class="fa-solid fa-x"></i></li>
-                    <li><a href="#profileSection"><i class="fa-solid fa-user"></i>Profile</a></li>
                     <li><a href="#homeSection"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li><a href="#recipeTrackerSection"><i class="fa-solid fa-clipboard"></i>Recipe Tracker</a></li>
+                    <li><a href="#mealTrackerSection"><i class="fa-solid fa-clipboard"></i>Meal Tracker</a></li>
                     <li><a href="#timeTrackerSection"><i class="fa-solid fa-clock"></i>Time Tracker</a></li>
                 </ul>
             </div>
@@ -34,20 +35,50 @@
             </div>
         </nav>
 
-        <!--Main body of website-->
-        <div class="body">
-            <section id="profileSection">
-                <p>Profile section! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eum architecto tempora ex dolore dolores, dignissimos at eligendi consequatur veritatis ab expedita doloribus cumque doloremque temporibus alias illo. Minima, eos!</p>
-            </section>
+        <!--------------------
+        Main body and sections
+        --------------------->
 
+        <div class="body">
+            <!--Home Section: The "landing page" of the web app, with brief intro, features overview-->
             <section id="homeSection">
                 <p>Home section! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eum architecto tempora ex dolore dolores, dignissimos at eligendi consequatur veritatis ab expedita doloribus cumque doloremque temporibus alias illo. Minima, eos!</p>
             </section>
 
-            <section id="recipeTrackerSection">
-                <p>Recipe tracker section! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eum architecto tempora ex dolore dolores, dignissimos at eligendi consequatur veritatis ab expedita doloribus cumque doloremque temporibus alias illo. Minima, eos!</p>
+            <!--Meal Tracker Section: lets users keep track of how many times they've made a certain recipe-->
+            <section id="mealTrackerSection">
+                <div class="card-wrapper">
+                    <div class="meal-card">
+                        
+                        <div class="meal-content">
+                            <h3>Meal Name</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <input type="number" class="timeEntry">
+                            <a href="#" class="expandButton">View Recipe</a>
+                        </div>
+                    </div>
+                    <div class="meal-card">
+                        
+                        <div class="meal-content">
+                            <h3>Meal Name</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <input type="number" class="timeEntry">
+                            <a href="#" class="expandButton">View Recipe</a>
+                        </div>
+                    </div>
+                    <div class="meal-card">
+                        
+                        <div class="meal-content">
+                            <h3>Meal Name</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            <input type="number" class="timeEntry">
+                            <a href="#" class="expandButton">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
             </section>
-            
+
+            <!--Recipe Time Tracker Section: lets users keep track of how long it took themselves to make a certain recipe-->
             <!--Recipe Time Tracker uses HTML & CSS code adapted from: [dcode]. (2022 Mar 30). Build a Workout Tracker with JavaScript and Local Storage [Video]. Youtube. https://www.youtube.com/watch?v=HY6nPFsADDo Code class names and input types changed where necessary, adapted the HTML structure and modified it to allow users to add a new recipe entry and keep track of how long it takes them to cook the recipe.-->
             <section id="timeTrackerSection">
                 <div id="timeApp">
