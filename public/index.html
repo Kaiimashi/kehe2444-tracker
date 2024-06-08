@@ -14,8 +14,12 @@
         ----------------------->
 
         <nav class="navmenu">
-            <div class="logo">Tracker App!</div>
+            <div class="logo">
+                <!--"Chinese Recipe Tracker" web app logo. Logo uses background photo by Freepik: https://www.freepik.com/free-photo/flavorful-chinese-fast-food-boxes_5121594.htm#query=noodle%20wallpaper&position=28&from_view=keyword&track=ais_user&uuid=7b0b7087-5b6e-42ae-808f-9c962bf5c554 -->
+                <img src="scss/images/Web app logo.png">
+            </div>
             <div class="desktopmenu">
+                <!--links located in the desktop navbar, sends user to corresponding section when clicked-->
                 <ul class="tabs">
                     <li><a href="#homeSection"><i class="fa-solid fa-house"></i>Home</a></li>
                     <li><a href="#mealTrackerSection"><i class="fa-solid fa-clipboard"></i>Meal Tracker</a></li>
@@ -23,6 +27,7 @@
                 </ul>
             </div>
             <div class="mobilemenu">
+                <!--links located in mobile navmenu, only shown when user clicks the burger menu. "fa-x" is 'x' button to allow users to close the mobile navmenu-->
                 <ul class="tabs">
                     <li onclick=hideMobileMenu()><i class="fa-solid fa-x"></i></li>
                     <li><a href="#homeSection"><i class="fa-solid fa-house"></i>Home</a></li>
@@ -31,6 +36,7 @@
                 </ul>
             </div>
             <div class="menubtn">
+                <!--burger menu that users can click to reveal the mobile navmenu-->
                 <ul onclick=showMobileMenu()><i class="fa-solid fa-bars"></i></ul>
             </div>
         </nav>
@@ -44,6 +50,7 @@
             <section id="homeSection">
                 <div class="homeWrapper">
                     <div class="homeContent">
+                        <!--Intial welcome text, brief intro to the web app and button to bring user down to the next section-->
                         <span>WELCOME TO</span>
                         <h1>Your personal Chinese Recipe Tracker!</h1>
                         <h2>Easily keep track how many times you made your favourite Chinese meals, and how long it took you to make them!</h2>

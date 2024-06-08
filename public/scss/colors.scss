@@ -2,7 +2,7 @@
 Home section colours
 ----------------- */
 
-//Home title text outline achieved using 4 text-shadows, code sourced from Stack Overflow: https://stackoverflow.com/questions/4919076/outline-effect-to-text
+//All text outlines achieved using 4 text-shadows, code sourced from Stack Overflow: https://stackoverflow.com/questions/4919076/outline-effect-to-text
 .homeContent h1 {
     color: #ffbf00;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -23,8 +23,7 @@ Main body and section colours
 --------------------------- */
 
 .wrapper .navmenu{
-    background-color: rgba(0, 0, 0, 0.329); //colour is slightly transparent for glass-effect on mobile menu
-    //backdrop-filter: blur(10px); //blurs background behind the mobile menu
+    background-color: rgba(0, 0, 0, 0.329); //colour is slightly transparent to partially show background image 
     color: white;
 }
 
@@ -52,6 +51,7 @@ a {
 Meal Tracker colours
 ------------------ */
 
+//meal tracker section heading and subheading colours
 .mealTrackerIntro h1 {
     color: #ffbf00;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -61,7 +61,7 @@ Meal Tracker colours
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-//cards
+//meal card colours
 .cardWrapper {
     color: black;
 }
@@ -71,11 +71,12 @@ Meal Tracker colours
     color: black;
 }
 
+//view recipe button turns green when cursor hovers over it
 .expandButton:hover {
     background: rgba(0, 151, 33, 0.89);
 }
 
-//meal details pop-up
+//meal details pop-up screen
 .mealDetails {
     background-color: #ffffff81;
     backdrop-filter: blur(10px);
@@ -95,6 +96,7 @@ Meal Tracker colours
 Recipe Time Tracker Colours
 ------------------------ */
 
+//recipe time tracker section heading and subheading colours
 .timeTrackerIntro h1 {
     color: #ffbf00;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -104,15 +106,17 @@ Recipe Time Tracker Colours
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+//time tracker table head and row colours
 .timeTracker th {
     color: black;
     background-color: #FFD046;
 }
 
+//user entry row colours
 .userEntries .entryRow {
     background: rgba(236, 236, 236, 0.616);
 }
-
+//odd rows are coloured a different shade to help distinguish rows apart when user adds new rows
 .userEntries .entryRow:nth-child(odd) {
     background: rgba(105, 105, 105, 0.507);
 }
@@ -132,6 +136,7 @@ Recipe Time Tracker Colours
     color: red;
 }
 
+//add new row green button text
 .addEntryButton {
     color: green;
 }

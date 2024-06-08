@@ -1,4 +1,5 @@
 .wrapper {
+    //fallback to Helvetica or other sans-serif font if Arial doens't work
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -34,7 +35,7 @@ Meal Tracker Typography
     font-size: 1.5em;
 }
 
-//cards
+//meal cards
 .mealCard h3 {
     font-size: 22px;
     margin-top: 8px;

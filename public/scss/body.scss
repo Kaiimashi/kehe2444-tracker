@@ -1,5 +1,6 @@
 *{
     overflow-x: hidden;
+    //smooth scroll behaviour, when clicking on navmenu links the screen doesn't jump immediately to a corresponding section
     scroll-behavior: smooth;
 }
 
@@ -7,14 +8,17 @@
 Main body and section styling
 --------------------------- */
 
+//set body with left margin so the navbar doesn't obscure objects/text in the body
 .body{
     width: 80vw;
     margin-left: 20vw;
 }
 
+//outlines the height of each section, padding ensures objects inside sections don't squeeze against borders
 section{
     height: 110vh;
     padding: 30px;
+    //dotted line to distinguish sections apart
     border-bottom: 5px dotted white;
 }
 
@@ -30,6 +34,7 @@ Home section styling
     align-items: center;
 }
 
+//set home content (text) and thumbnail flex values to resize when screen size changes, orienting the thumbnail underneat text when in mobile view
 .homeContent {
     flex: 1 1 17rem;
 }
@@ -48,7 +53,7 @@ Home section styling
 Meal Tracker Styling
 ----------------- */
 
-//cards styling
+//meal cards styling
 .cardWrapper {
     display: flex;
     justify-content: center;
@@ -56,6 +61,7 @@ Meal Tracker Styling
     margin-top: 100px;
 }
 
+//gives cards a white background and rounds the corners. Add margin to put space between cards
 .mealCard {
     width: 300px;
     background-color: white;
@@ -73,6 +79,7 @@ Meal Tracker Styling
     padding: 16px;
 }
 
+//styling the 'View Recipe' button and centering it inside the card
 .expandButton {
     display: flex;
     width: 150px;
@@ -106,6 +113,7 @@ Meal Tracker Styling
     cursor: pointer;
 }
 
+//styling for the 'load more recipes' button (planned for future development, currently just has placeholder text)
 .loadButton {
     display: flex;
     width: 150px;
@@ -113,6 +121,11 @@ Meal Tracker Styling
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.loadMoreRecipes {
+    align-items: center;
+    margin-top: 50px;
 }
 
 /* ------------------------
@@ -131,19 +144,20 @@ Recipe Time Tracker Styling
     padding: 0.75em;
 }
 
+//Sets the styling for the user input boxes
 .dateEntry, .recipeEntry, .timeEntry {
     display: inline-block;
     box-sizing: border-box;
-    //font-size: 1em;
     height: 2.5em;
     padding: 0.5em 0;
 }
 
-//styling the duration input box
+//styling the duration input box (number)
 .timeEntry {
     width: 5em;
 }
 
+//align button in row and make cursor pointer when hovering over the 'x' button
 .deleteEntryButton {
     display: flex;
     align-items: center;
@@ -155,21 +169,17 @@ Recipe Time Tracker Styling
     cursor: pointer;
 }
 
+//outlines the "new entry row" (blank row that just contains the add recipe button)
 .newEntryRow {
     border-top: 3px;
     border-bottom: 3px;
 }
 
-
+//button used by user for adding a new row
 .addEntryButton {
     display: inline-block;
     padding: 0.5em 1em;
     cursor: pointer;
-}
-
-.loadMoreRecipes {
-    align-items: center;
-    margin-top: 50px;
 }
 
 /* ------------------------------------
@@ -220,6 +230,7 @@ Recipe Time Tracker Responsiveness
         width: 16.5em;
     }
 
+    //Getting labels for header titles (date, recipe made, time taken) and placing them vertically to the left of the table
     td::before {
         content: attr(data-label);
         position: absolute;
