@@ -1,3 +1,19 @@
+/* -----------------
+Home section colours
+----------------- */
+
+//Home title text outline achieved using 4 text-shadows, code sourced from Stack Overflow: https://stackoverflow.com/questions/4919076/outline-effect-to-text
+.homeContent h1 {
+    color: #ffbf00;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.homeContent h2 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
 /* ---------------------------
 Main body and section colours
 --------------------------- */

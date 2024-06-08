@@ -42,11 +42,24 @@
         <div class="body">
             <!--Home Section: The "landing page" of the web app, with brief intro, features overview-->
             <section id="homeSection">
-                <p>Home section! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eum architecto tempora ex dolore dolores, dignissimos at eligendi consequatur veritatis ab expedita doloribus cumque doloremque temporibus alias illo. Minima, eos!</p>
+                <div class="homeWrapper">
+                    <div class="homeContent">
+                        <span>WELCOME TO</span>
+                        <h1>Your personal Chinese Recipe Tracker!</h1>
+                        <h2>Easily keep track how many times you made your favourite Chinese meals, and how long it took you to make them!</h2>
+                        <ul><a href="#mealTrackerSection">Let's get started!</a></ul>
+                    </div>
+                    <div class="homeThumbnail">
+                        <!--Har Gow homepage thumbnail image. Photo by Allen on CleanPNG: https://www.cleanpng.com/png-xiaolongbao-dim-sum-har-gow-dim-sim-cha-siu-bao-cr-95381/ -->
+                        <img src="scss/images/kisspng-xiaolongbao-dim-sum-har-gow-dim-sim-cha-siu-bao-crystal-shrimp-dumpling-material-5a6ea578b593d5.7265774715172007607438.png">
+                    </div>
+                </div>
             </section>
 
             <!--Meal Tracker Section: lets users keep track of how many times they've made a certain recipe-->
             <section id="mealTrackerSection">
+                <h1>Meal Tracker</h1>
+                <h2>View iconic Chinese recipes here. You can keep track of just how many times you've made a meal to discover your taste and texture preferences!</h2>
                 <!--Meal cards (recipe overview) section-->
                 <div class="cardWrapper">
                     <div class="mealCard" card-id="card1">
@@ -116,6 +129,8 @@
             <!--Recipe Time Tracker Section: lets users keep track of how long it took themselves to make a certain recipe-->
             <!--Recipe Time Tracker uses HTML & CSS code adapted from: [dcode]. (2022 Mar 30). Build a Workout Tracker with JavaScript and Local Storage [Video]. Youtube. https://www.youtube.com/watch?v=HY6nPFsADDo Code class names and input types changed where necessary, adapted the HTML structure and modified it to allow users to add a new recipe entry and keep track of how long it takes them to cook the recipe.-->
             <section id="timeTrackerSection">
+                <h1>Recipe Time Tracker</h1>
+                <h2>Every recipe has an estimated preparation time needed, but not everyone works at the same pace. Use the tool below to help keep track of how long it takes yourself to make your favourite recipes!</h2>
                 <div id="timeApp">
                     <table class="timeTracker">
                         <thead>

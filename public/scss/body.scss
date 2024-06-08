@@ -13,9 +13,29 @@ Main body and section styling
 }
 
 section{
-    height: 100vh;
+    height: 110vh;
     padding: 30px;
     border-bottom: 5px dotted white;
+}
+
+/* -----------------
+Home section styling
+----------------- */
+
+.homeWrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.homeContent {
+    flex: 1 1 17rem;
+}
+
+.homeThumbnail {
+    flex: 1 1 17rem;
 }
 
 /* -----------------
