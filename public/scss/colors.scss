@@ -32,6 +32,7 @@ a {
 Meal Tracker colours
 ------------------ */
 
+//cards
 .cardWrapper {
     color: black;
 }
@@ -43,6 +44,12 @@ Meal Tracker colours
 
 .expandButton:hover {
     background: rgba(0, 151, 33, 0.89);
+}
+
+//meal details pop-up
+.mealDetails {
+    background-color: #FFD046;
+    color: black;
 }
 
 /* ------------------------

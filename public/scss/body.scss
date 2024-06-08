@@ -22,6 +22,7 @@ section{
 Meal Tracker Styling
 ----------------- */
 
+//cards styling
 .cardWrapper {
     display: flex;
     justify-content: center;
@@ -58,6 +59,20 @@ Meal Tracker Styling
 .amountEntry {
     width: 80px;
     margin-left: 110px;
+}
+
+//pop-up details styling
+.mealDetails {
+    position: fixed;
+    top: 20%;
+    width: auto;
+    height: 70%;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-left: 90px;
+    margin-right: 90px;
+    //hide the pop-up when page loads
+    display: none;
 }
 
 /* ------------------------

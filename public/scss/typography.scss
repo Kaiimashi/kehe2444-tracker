@@ -6,6 +6,7 @@
 Meal Tracker Typography
 --------------------- */
 
+//cards
 .mealCard h3 {
     font-size: 22px;
     margin-top: 8px;
@@ -26,6 +27,11 @@ Meal Tracker Typography
 }
 
 .amountEntry {
+    text-align: center;
+}
+
+//meal details pop-up
+.mealDetails {
     text-align: center;
 }
 

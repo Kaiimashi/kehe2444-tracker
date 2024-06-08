@@ -55,7 +55,7 @@
                         <div class="meal-content">
                             <h3>Fried Rice</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <button type="button" class="expandButton">View Recipe &plus;</button>
+                            <button type="button" class="expandButton" onclick=openMealDetails()>View Recipe &plus;</button>
                             <h4>I've made this recipe...</h4>
                                 <input type="number" class="amountEntry" value="0">
                             <h4>Times!</h4>
@@ -67,7 +67,7 @@
                         <div class="meal-content">
                             <h3>Chili Dumplings</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <button type="button" class="expandButton">View Recipe &plus;</button>
+                            <button type="button" class="expandButton" onclick=openMealDetails()>View Recipe &plus;</button>
                             <h4>I've made this recipe...</h4>
                                 <input type="number" class="amountEntry" value="0">
                             <h4>Times!</h4>
@@ -79,7 +79,7 @@
                         <div class="meal-content">
                             <h3>Spring Rolls</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <button type="button" class="expandButton">View Recipe &plus;</button>
+                            <button type="button" class="expandButton" onclick=openMealDetails()>View Recipe &plus;</button>
                             <h4>I've made this recipe...</h4>
                                 <input type="number" class="amountEntry" value="0">
                             <h4>Times!</h4>
@@ -91,7 +91,7 @@
                         <div class="meal-content">
                             <h3>Sweet & Sour Pork</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <button type="button" class="expandButton">View Recipe &plus;</button>
+                            <button type="button" class="expandButton" onclick=openMealDetails()>View Recipe &plus;</button>
                             <h4>I've made this recipe...</h4>
                                 <input type="number" class="amountEntry" value="0">
                             <h4>Times!</h4>
@@ -101,7 +101,7 @@
 
                 <!--View Recipes pop-up section-->
                 <div class="mealDetails">
-                    <button type="button" class="closeMealDetails">Close</button>
+                    <ul onclick=closeMealDetails()><i class="fa-solid fa-x"></i></ul>
                     <div class="mealDetailsContent">
                         <h2 class="recipeName">Recipe Name</h2>
                         <p class = "recipeInfo">Around 10 Minutes</p>
