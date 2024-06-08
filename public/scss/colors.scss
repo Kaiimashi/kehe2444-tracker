@@ -13,6 +13,10 @@ Home section colours
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.homeContent ul {
+    background-color: black;
+}
+
 
 /* ---------------------------
 Main body and section colours
@@ -48,6 +52,15 @@ a {
 Meal Tracker colours
 ------------------ */
 
+.mealTrackerIntro h1 {
+    color: #ffbf00;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.mealTrackerIntro h2 {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 //cards
 .cardWrapper {
     color: black;
@@ -80,6 +93,15 @@ Meal Tracker colours
 /* ------------------------
 Recipe Time Tracker Colours
 ------------------------ */
+
+.timeTrackerIntro h1 {
+    color: #ffbf00;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.timeTrackerIntro h2 {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
 .timeTracker th {
     color: black;
